@@ -45,7 +45,7 @@ public class PlayerLook : MonoBehaviour
         transform.Rotate(Vector3.up * mouseDelta.x);
 
         cameraVerticalAngle += mouseDelta.y;
-        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -30f, 30f);
+        cameraVerticalAngle = Mathf.Clamp(cameraVerticalAngle, -60f, 60f);
 
         playerCamera.transform.localRotation = Quaternion.Euler(-cameraVerticalAngle, 0f, 0f);
 
